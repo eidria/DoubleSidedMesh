@@ -1,11 +1,11 @@
 import XCTest
+import RealityKit
+
 @testable import DoubleSidedMesh
 
 final class DoubleSidedMeshTests: XCTestCase {
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(DoubleSidedMesh().text, "Hello, World!")
+        let mesh = MeshResource.generatePlane(width: 1.0, depth: 1.0)
+        let _ = try mesh.addingInvertedNormals(useExistingMaterialIndexes: false)
     }
 }
