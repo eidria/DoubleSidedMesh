@@ -1,3 +1,11 @@
+//
+//  DoubleSidedMesh.swift
+//
+//
+//  Created by Dan Galbraith on 2/18/23.
+//  Copyright (c) 2023 Eidria, Inc.
+//  Licensed under the MIT software license. See License.txt for details
+
 import Foundation
 import RealityKit
 
